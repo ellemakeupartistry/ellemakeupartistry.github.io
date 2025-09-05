@@ -1,153 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elle Makeup Artistry | Affordable Beauty</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .hero-bg {
-            background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.7)), url('https://stock.adobe.com/ph/images/makeup-artist-paints-lips-of-a-beautiful-bride-tender-morning-of-the-bride-young-girl-paints-lips-with-a-brush-in-a-gentle-shade/317605666') no-repeat center center;
-            background-size: cover;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .floating {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elle Makeup Artistry | Affordable Beauty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.7)),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
 </head>
 <body class="bg-rose-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold text-rose-700">Elle Makeup Artistry</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-rose-600 transition">Services</a>
-                    <a href="#pricing" class="text-gray-700 hover:text-rose-600 transition">Pricing</a>
-                    <a href="#about" class="text-gray-700 hover:text-rose-600 transition">About</a>
-                    <a href="#contact" class="text-gray-700 hover:text-rose-600 transition">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="#" class="text-xl font-bold text-rose-700">Elle Makeup Artistry</a>
         </div>
-        
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
-            <a href="#services" class="block py-2 text-gray-700 hover:text-rose-600 transition">Services</a>
-            <a href="#pricing" class="block py-2 text-gray-700 hover:text-rose-600 transition">Pricing</a>
-            <a href="#about" class="block py-2 text-gray-700 hover:text-rose-600 transition">About</a>
-            <a href="#contact" class="block py-2 text-gray-700 hover:text-rose-600 transition">Contact</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#services" class="text-gray-700 hover:text-rose-600 transition">Services</a>
+          <a href="#pricing" class="text-gray-700 hover:text-rose-600 transition">Pricing</a>
+          <a href="#about" class="text-gray-700 hover:text-rose-600 transition">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-rose-600 transition">Contact</a>
         </div>
-    </nav>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero-bg min-h-[80vh] flex items-center">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-5xl md:text-6xl font-bold text-rose-800 mb-4">Elle Makeup Artistry</h1>
-                    <p class="text-2xl text-rose-600 mb-8">Affordable Beauty. Naturally you.</p>
-                    <p class="text-gray-700 mb-8 text-lg">Professional makeup services that enhance your natural beauty without breaking the bank. Specializing in looks that make you feel confident and radiant.</p>
-                    <div class="flex space-x-4">
-                        <a href="#contact" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-lg transition shadow-md">Book Now</a>
-                        <a href="#services" class="border border-rose-600 text-rose-600 hover:bg-rose-50 px-6 py-3 rounded-lg transition">View Services</a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="https://placehold.co/600x800" alt="Makeup artist applying flawless foundation to client in well-lit studio with professional brushes and products" class="rounded-lg shadow-xl floating">
-                    <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-md">
-                        <p class="font-bold text-gray-800">"Elle transformed my look effortlessly!"</p>
-                        <p class="text-sm text-gray-600">- Sarah J.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+      <a href="#services" class="block py-2 text-gray-700 hover:text-rose-600 transition">Services</a>
+      <a href="#pricing" class="block py-2 text-gray-700 hover:text-rose-600 transition">Pricing</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-rose-600 transition">About</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-rose-600 transition">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-rose-800 mb-4">Our Services</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Professional makeup tailored to your unique features and preferences</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="service-card bg-white p-6 rounded-xl shadow-md transition duration-300 border border-gray-100">
-                    <img src="https://placehold.co/600x400" alt="Bridal makeup service with glowing bride and soft romantic eyeshadow in warm tones" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-rose-700 mb-2">Bridal Makeup</h3>
-                    <p class="text-gray-600 mb-4">Flawless makeup for your special day that lasts from ceremony to reception</p>
-                    <ul class="space-y-2 mb-4 text-gray-700">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Includes trial session</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Waterproof & long-lasting</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Travel to venue available</span>
-                        </li>
-                    </ul>
-                    <a href="#contact" class="inline-block text-rose-600 hover:text-rose-800 font-medium transition">Book Now →</a>
-                </div>
-                
-                <div class="service-card bg-white p-6 rounded-xl shadow-md transition duration-300 border border-gray-100">
-                    <img src="https://placehold.co/600x400" alt="Professional photoshoot makeup with dramatic contouring and bold lip color under studio lighting" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-2xl font-bold text-rose-700 mb-2">Special Occasion</h3>
-                    <p class="text-gray-600 mb-4">Stand out at your next big event with makeup designed to shine</p>
-                    <ul class="space-y-2 mb-4 text-gray-700">
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Customized to event type</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                            </svg>
-                            <span>Includes touch-up kit</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-[80vh] flex items-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-5xl md:text-6xl font-bold text-rose-800 mb-4">Elle Makeup Artistry</h1>
+          <p class="text-2xl text-rose-600 mb-8">Affordable Beauty. Naturally you.</p>
+          <p class="text-gray-700 mb-8 text-lg">Professional makeup services that enhance your natural beauty without breaking the bank. Specializing in looks that make you feel confident and radiant.</p>
+          <div class="flex space-x-4">
+            <a href="#contact" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-3 rounded-lg transition shadow-md">Book Now</a>
+            <a href="#services" class="border border-rose-600 text-rose-600 hover:bg-rose-50 px-6 py-3 rounded-lg transition">View Services</a>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Makeup artist applying flawless foundation to client in well-lit studio with professional brushes and products" class="rounded-lg shadow-xl floating" />
+          <div class="absolute -bottom-4 -left-4 bg-white p-4 rounded-lg shadow-md max-w-xs">
+            <p class="font-bold text-gray-800">"Elle transformed my look effortlessly!"</p>
+            <p class="text-sm text-gray-600">- Sarah J.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-rose-800 mb-4">Our Services</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Professional makeup tailored to your unique features and preferences</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="service-card bg-white p-6 rounded-xl shadow-md transition duration-300 border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Bridal makeup service with glowing bride and soft romantic eyeshadow in warm tones" class="w-full h-64 object-cover rounded-lg mb-4" />
+          <h3 class="text-2xl font-bold text-rose-700 mb-2">Bridal Makeup</h3>
+          <p class="text-gray-600 mb-4">Flawless makeup for your special day that lasts from ceremony to reception</p>
+          <ul class="space-y-2 mb-4 text-gray-700">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Includes trial session</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Waterproof & long-lasting</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Travel to venue available</span>
+            </li>
+          </ul>
+          <a href="#contact" class="inline-block text-rose-600 hover:text-rose-800 font-medium transition">Book Now →</a>
+        </div>
+
+        <div class="service-card bg-white p-6 rounded-xl shadow-md transition duration-300 border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Professional photoshoot makeup with dramatic contouring and bold lip color under studio lighting" class="w-full h-64 object-cover rounded-lg mb-4" />
+          <h3 class="text-2xl font-bold text-rose-700 mb-2">Special Occasion</h3>
+          <p class="text-gray-600 mb-4">Stand out at your next big event with makeup designed to shine</p>
+          <ul class="space-y-2 mb-4 text-gray-700">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Customized to event type</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Includes touch-up kit</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Professional products used</span>
+            </li>
+          </ul>
+          <a href="#contact" class="inline-block text-rose-600 hover:text-rose-800 font-medium transition">Book Now →</a>
+        </div>
+
+        <div class="service-card bg-white p-6 rounded-xl shadow-md transition duration-300 border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80" alt="Makeup consultation with client and artist discussing color palettes" class="w-full h-64 object-cover rounded-lg mb-4" />
+          <h3 class="text-2xl font-bold text-rose-700 mb-2">Makeup Consultation</h3>
+          <p class="text-gray-600 mb-4">Personalized advice to find your perfect look and colors</p>
+          <ul class="space-y-2 mb-4 text-gray-700">
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Color matching and product recommendations</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>One-on-one session</span>
+            </li>
+            <li class="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-500 mt-0.5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span>Follow-up support</span>
+            </li>
+          </ul>
+          <a href="#contact" class="inline-block text-rose-600 hover:text-rose-800 font-medium transition">Book Now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-rose-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-rose-800 mb-8 text-center">Pricing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center">
+          <h3 class="text-2xl font-bold text-rose-700 mb-4">Bridal Makeup</h3>
+          <p class="text-gray-600 mb-6">$150 - Includes trial session</p>
+          <a href="#contact" class="text-rose-600 hover:text-rose-800 font-medium transition">Book Now →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center">
+          <h3 class="text-2xl font-bold text-rose-700 mb-4">Special Occasion</h3>
+          <p class="text-gray-600 mb-6">$100 - Includes touch-up kit
