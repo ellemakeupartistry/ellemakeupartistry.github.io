@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Now | Elle Makeup Artistry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+    body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body class="bg-rose-50">
 
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="text-xl font-bold text-rose-700">Elle Makeup Artistry</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="services.html" class="text-gray-700 hover:text-rose-600 transition">Services</a>
+          <a href="pricing.html" class="text-gray-700 hover:text-rose-600 transition">Pricing</a>
+          <a href="about.html" class="text-gray-700 hover:text-rose-600 transition">About</a>
+          <a href="contact.html" class="text-gray-700 hover:text-rose-600 transition">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-700" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+      <a href="services.html" class="block py-2 text-gray-700 hover:text-rose-600 transition">Services</a>
+      <a href="pricing.html" class="block py-2 text-gray-700 hover:text-rose-600 transition">Pricing</a>
+      <a href="about.html" class="block py-2 text-gray-700 hover:text-rose-600 transition">About</a>
+      <a href="contact.html" class="block py-2 text-gray-700 hover:text-rose-600 transition">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Booking Form -->
+  <main class="max-w-3xl mx-auto px-4 py-20 bg-white rounded-lg shadow-lg mt-12 mb-12">
+    <h1 class="text-4xl font-bold text-rose-800 mb-8 text-center">Book Your Appointment</h1>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain" class="space-y-6">
+      <div>
+        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" />
+      </div>
+
+      <div>
+        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" />
+      </div>
+
+      <div>
+        <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Optional" class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" />
+      </div>
+
+      <div>
+        <label for="service" class="block text-gray-700 font-semibold mb-2">Select Service</label>
+        <select id="service" name="service" required class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500">
+          <option value="" disabled selected>Select a service</option>
+          <option value="Bridal Makeup">Bridal Makeup</option>
+          <option value="Special Occasion">Special Occasion</option>
+          <option value="Makeup Consultation">Makeup Consultation</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="date" class="block text-gray-700 font-semibold mb-2">Preferred Date</label>
+        <input type="date" id="date" name="date" required class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" />
+      </div>
+
+      <div>
+        <label for="time" class="block text-gray-700 font-semibold mb-2">Preferred Time</label>
+        <input type="time" id="time" name="time" required class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" />
+      </div>
+
+      <div>
+        <label for="notes" class="block text-gray-700 font-semibold mb-2">Additional Notes</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Any special requests or information" class="w-full p-3 border border-rose-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 rounded-lg transition shadow-md">Submit Booking</button>
+    </form>
+  </main>
+
+</body>
+</html>
